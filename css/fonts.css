@@ -3,7 +3,7 @@
  src: url('https://j-co.ga/BetterGFMotesDB/fonts/CaesarForMe.ttf');
 }
 
-a[href|="#caesar"],a[href|="#caesar"],body:lang(bc) a[href|="#caesar"],body:lang(bc) a[href|="#caesar"] {
+a[href|="#encrypt"],a[href|="#encrypt"],body:lang(bc) a[href|="#encrypt"],body:lang(bc) a[href|="#encrypt"] {
     font-family: "CaesarForMe"!important;
     color: black!important;
     cursor: text;
