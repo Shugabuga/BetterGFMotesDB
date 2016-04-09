@@ -1,0 +1,1838 @@
+/* BetterGFMotes Emote CSS */
+
+
+/* The emotes below are exclusive to BetterGFMotes. */
+
+
+a[href|="#evilfresh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/evilfresh.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#heyyou"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/heyyou.png) no-repeat;
+    width: 55px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#bippyfresh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/bippyfresh.png) no-repeat;
+    width: 49px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#abandonthread"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/abandonthread.gif) no-repeat;
+    width: 400px;
+    height: 338px;
+    display: block;
+    float: left
+}
+a[href|="#abandonthread2"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/abandonthread2.gif) no-repeat;
+    width: 400px;
+    height: 300px;
+    display: block;
+    float: left
+}
+a[href|="#dipcrazy"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dipcrazy.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#dipcrazy"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dipcrazy.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#fordeatskids"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/fordeatskids.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#hoh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/hoh.png) no-repeat;
+    width: 173px;
+    height: 100px;
+    display: block;
+    float: left
+}
+a[href|="#nevermindallthat"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/nevermindallthat.jpeg) no-repeat;
+    width: 300px;
+    height: 169px;
+    display: block;
+    float: left
+}
+a[href|="#nocomment"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/nocomment.gif) no-repeat;
+    width: 500px;
+    height: 273px;
+    display: block;
+    float: left
+}
+a[href|="#ohsnap"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/ohsnap.gif) no-repeat;
+    width: 300px;
+    height: 225px;
+    display: block;
+    float: left
+}
+a[href|="#permascarred"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/permascarred.gif) no-repeat;
+    width: 480px;
+    height: 270px;
+    display: block;
+    float: left
+}
+a[href|="#siblinghug"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/siblinghug.gif) no-repeat;
+    width: 245px;
+    height: 250px;
+    display: block;
+    float: left
+}
+a[href|="#soosgasp"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/soosgasp.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#wendisappoint"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/wendisappoint.png) no-repeat;
+    width: 73px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+
+
+
+
+
+a[href|="#bitchplease"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/bitchplease.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    display: block;
+    float: left
+}
+a[href|="#dipsass"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/dipsass.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    display: block;
+    float: left
+}
+a[href|="#haigb"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/haigb.gif) no-repeat;
+    width: 320px;
+    height: 240px;
+    display: block;
+    float: left
+}
+a[href|="#hehe"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/hehe.gif) no-repeat;
+    width: 250px;
+    height: 140px;
+    display: block;
+    float: left
+}
+a[href|="#herewego"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/herewego.gif) no-repeat;
+    width: 222px;
+    height: 224px;
+    display: block;
+    float: left
+}
+a[href|="#jammyfresh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/jammyfresh.png) no-repeat;
+    width: 84px;
+    height: 100px;
+    display: block;
+    float: left
+}
+a[href|="#noo"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/noo.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#pixelsass"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/pixelsass.png) no-repeat;
+    width: 62px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#problemsolved"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/problemsolved.gif) no-repeat;
+    width: 400px;
+    height: 225px;
+    display: block;
+    float: left
+}
+a[href|="#redditsilver"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/redditsilver.png) no-repeat;
+    width: 250px;
+    height: 221px;
+    display: block;
+    float: left
+}
+a[href|="#sass"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/sass.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#scream"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/scream.gif) no-repeat;
+    width: 360px;
+    height: 202px;
+    display: block;
+    float: left
+}
+a[href|="#snoo-dipper"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/snoo-dipper.png) no-repeat;
+    width: 42px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#snoo-mabel"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/snoo-mabel.png) no-repeat;
+    width: 48px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#snoo-questiony"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/snoo-questiony.png) no-repeat;
+    width: 53px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#soosweird"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/soosweird.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#snoos"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/snoos.png) no-repeat;
+    width: 39px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#woo"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/8FEB2016/woo.gif) no-repeat;
+    width: 500px;
+    height: 288px;
+    display: block;
+    float: left
+}
+
+
+
+
+
+
+
+
+
+a[href|="#88freshes"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/88freshes.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left
+}
+a[href|="#dippymad"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dippymad.gif) no-repeat;
+    width: 152px;
+    height: 85px;
+    display: block;
+    float: left
+}
+a[href|="#duckface"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/duckface.png) no-repeat;
+    width: 77px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+a[href|="#friskyfresh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/friskyfresh.png) no-repeat;
+    width: 42px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#mabelcute"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mabelcute.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#powerofmabel"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/powerofmabel.gif) no-repeat;
+    width: 153px;
+    height: 85px;
+    display: block;
+    float: left
+}
+a[href|="#rippyfresh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/rippyfresh.png) no-repeat;
+    width: 39px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#theend"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/theend.gif) no-repeat;
+    width: 99px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#unseenjoaje"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/unseenjoaje.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+a[href|="#flipadip"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/flipadip.gif) no-repeat;
+    width: 500px;
+    height: 281px;
+    display: block;
+    float: left
+}
+a[href|="#stantounge"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/stantounge.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#billdin"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/billdin.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#summerween"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/summerween.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#handwitch"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/handwitch.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#stangrin"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/stangrin.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#umm"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/umm.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#stansquint"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/stansquint.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#wink"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/wink.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#fordshades"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/fordshades.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#soostounge"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/soostounge.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+a[href|="#alexscared"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/alexscared.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#bippersmile"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dippersmile.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#blindivan"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/blindivan.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#bord"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/bord.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#butter"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/butter.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#buttivan"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/buttivan.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#candle"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/candle.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#creepygideon"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/creepygideon.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#dipper2"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dipper.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#ducktwin"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/ducktwin.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#gideonbot"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/gideonbot.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#gideongrin"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/gideongrin.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#gorney"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/gorney.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#journal1"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/journal1.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#journal3"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/journal3.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#journal2"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/journal2.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#mabelopen"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mabelopen.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#manatour"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/manataur.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#manataur"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/manataur.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#mermando"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mermando.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#mabelsweater"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mabelsweater.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#shapeshifter"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/shapeshifter.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#smiledip"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/smiledip.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#stanrun"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/stanrun.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#trickster"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/trickster.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#sweatertown"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/sweatertown.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#tyrone"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/tyrone.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#ugh"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/ugh.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#bettergfmotesverify"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/bettergfmotesverify.png) no-repeat;
+    width: 200px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#dipperpony"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/dipperpony.png) no-repeat;
+    width: 100px;
+    height: 115px;
+    display: block;
+    float: left
+}
+a[href|="#mabelpony"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mabelpony.png) no-repeat;
+    width: 100px;
+    height: 73px;
+    display: block;
+    float: left
+}
+
+
+a[href|="#chillpill"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/chillpill.png) no-repeat;
+    width: 100px;
+    height: 79px;
+    display: block;
+    float: left
+}
+a[href|="#cblater"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/cblater.png) no-repeat;
+    width: 70px;
+    height: 66px;
+    display: block;
+    float: left
+}
+a[href|="#alex2"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/alex.png) no-repeat;
+    width: 70px;
+    height: 67px;
+    display: block;
+    float: left
+}
+a[href|="#alexbill"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/alexbill.png) no-repeat;
+    width: 70px;
+    height: 67px;
+    display: block;
+    float: left
+}
+a[href|="#woodip"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/woodip.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#soosamaze"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/soosamaze.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#ieatkids"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/ieatkids.png) no-repeat;
+    width: 70px;
+    height: 77px;
+    display: block;
+    float: left
+}
+a[href|="#mabelhallucination"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mabelhallucination.png) no-repeat;
+    width: 500px;
+    height: 282px;
+    display: block;
+    float: left
+}
+
+/* The emotes below were retired from /r/gravityfalls. They should be backwards-compatible with old comments. */
+
+
+a[href|="#pacifisad2"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/pacifisad.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#pacifimom"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/pacifimom.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#mayor"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/mayor.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#danconfused"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/danconfused.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#lovegod"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/lovegod.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#screamhead"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/screamhead.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#adorablles"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/adorablles.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#soosfaint"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/soosfaint.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#somethingbig"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/somethingbig.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#ladysoosan"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/ladysoosan.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#beastoneeye"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/beastoneeye.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#eatable"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/eatable.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#crystable"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/crystable.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#government"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/government.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#youngblubs"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/youngblubs.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#puppetsoos"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/puppetsoos.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#puppetwendy"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/puppetwendy.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#bipperpretty"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/bipperpretty.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#alexclown"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/alexclown.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#gamegirl"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/gamegirl.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#heygurl"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/heygurl.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+a[href|="#timebaby"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/timebaby.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+
+
+/* The emotes below are from /r/gravityfalls as of December 2015. Due to this method, there could be CSS issues in other subreddits. This has been updated, so scroll down! */
+
+/*
+a[href|="#mabel"],a[href|="#mabelwat"],a[href|="#mabelgoof"],a[href|="#mabelevil"],a[href|="#grumpymabel"],a[href|="#partygurl"],a[href|="#thumbdown"],a[href|="#pout"],a[href|="#happymabel"],a[href|="#distressmabel"],a[href|="#mabelgum"],a[href|="#mabelidk"],a[href|="#cryofjoy"],a[href|="#mabelgross"],a[href|="#mabelsquee"],a[href|="#disapproval"],a[href|="#dipmad"],a[href|="#paperjam"],a[href|="#dipponder"],a[href|="#dipcheer"],a[href|="#dippergross"],a[href|="#indianadipper"],a[href|="#dipsad"],a[href|="#airquote"],a[href|="#dipawe"],a[href|="#dipcry"],a[href|="#dipslap"],a[href|="#pinescream"],a[href|="#grunkle"],a[href|="#stanwow"],a[href|="#grunklemad"],a[href|="#heraim"],a[href|="#onedoesnot"],a[href|="#eyebrowstan"],a[href|="#icansellthis"],a[href|="#trytosmile"],a[href|="#dippyfresh"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+background-image:url(https://b.thumbs.redditmedia.com/6w8wB1kC4kQia2WYlAZB2F6oR0TAHu6AElqkhKb3-BU.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#rmabel"],a[href|="#rmabelwat"],a[href|="#rmabelgoof"],a[href|="#rmabelevil"],a[href|="#rgrumpymabel"],a[href|="#rpartygurl"],a[href|="#rthumbdown"],a[href|="#rpout"],a[href|="#rhappymabel"],a[href|="#rdistressmabel"],a[href|="#rmabelgum"],a[href|="#rmabelidk"],a[href|="#rcryofjoy"],a[href|="#rmabelgross"],a[href|="#rmabelsquee"],a[href|="#rdisapproval"],a[href|="#rdipmad"],a[href|="#rpaperjam"],a[href|="#rdipponder"],a[href|="#rdipcheer"],a[href|="#rdippergross"],a[href|="#rindianadipper"],a[href|="#rdipsad"],a[href|="#rairquote"],a[href|="#rdipawe"],a[href|="#rdipcry"],a[href|="#rdipslap"],a[href|="#rpinescream"],a[href|="#rgrunkle"],a[href|="#rstanwow"],a[href|="#rgrunklemad"],a[href|="#rheraim"],a[href|="#ronedoesnot"],a[href|="#reyebrowstan"],a[href|="#ricansellthis"],a[href|="#rtrytosmile"],a[href|="#rdippyfresh"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+transform:rotateY(180deg);
+background-image:url(https://b.thumbs.redditmedia.com/6w8wB1kC4kQia2WYlAZB2F6oR0TAHu6AElqkhKb3-BU.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#soos"],a[href|="#toomuch"],a[href|="#soosheart"],a[href|="#wendy"],a[href|="#wendyread"],a[href|="#wearewomen"],a[href|="#eyeroll"],a[href|="#candy"],a[href|="#grenda"],a[href|="#mcg"],a[href|="#mcevil"],a[href|="#waddles"],a[href|="#waddleswag"],a[href|="#noooo"],a[href|="#gideon"],a[href|="#gideonplan"],a[href|="#usethem"],a[href|="#budeon"],a[href|="#budangry"],a[href|="#robbie"],a[href|="#robbiesoso"],a[href|="#trigger"],a[href|="#beghenry"],a[href|="#gnome"],a[href|="#tad"],a[href|="#muted"],a[href|="#pacifiwhat"],a[href|="#pacifisad"],a[href|="#puppetmabel"],a[href|="#puppetdipper"],a[href|="#puppetstan"],a[href|="#bwaaa"],a[href|="#kermit"],a[href|="#mybrother"],a[href|="#notimpressed"],a[href|="#impressed"],a[href|="#lookonhisface"],a[href|="#stanthink"],a[href|="#fordmad"],a[href|="#ducktective"],a[href|="#bighenry"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+background-image:url(https://a.thumbs.redditmedia.com/6oZmjIwGtc4VlJcT12ym5x1lVOM32GmQxDKbNHjYil8.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#rsoos"],a[href|="#rtoomuch"],a[href|="#rsoosheart"],a[href|="#rwendy"],a[href|="#rwendyread"],a[href|="#rwearewomen"],a[href|="#reyeroll"],a[href|="#rcandy"],a[href|="#rgrenda"],a[href|="#rmcg"],a[href|="#rmcevil"],a[href|="#rwaddles"],a[href|="#rwaddleswag"],a[href|="#rnoooo"],a[href|="#rgideon"],a[href|="#rgideonplan"],a[href|="#rusethem"],a[href|="#rbudeon"],a[href|="#rbudangry"],a[href|="#rrobbie"],a[href|="#rrobbiesoso"],a[href|="#rtrigger"],a[href|="#rbeghenry"],a[href|="#rgnome"],a[href|="#rtad"],a[href|="#rmuted"],a[href|="#rpacifiwhat"],a[href|="#rpacifisad"],a[href|="#rpuppetmabel"],a[href|="#rpuppetdipper"],a[href|="#rpuppetstan"],a[href|="#rbwaaa"],a[href|="#rkermit"],a[href|="#rmybrother"],a[href|="#rnotimpressed"],a[href|="#rimpressed"],a[href|="#rlookonhisface"],a[href|="#rstanthink"],a[href|="#rfordmad"],a[href|="#rducktective"],a[href|="#rbighenry"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+transform:rotateY(180deg);
+background-image:url(https://a.thumbs.redditmedia.com/6oZmjIwGtc4VlJcT12ym5x1lVOM32GmQxDKbNHjYil8.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#bill"],a[href|="#angrybill"],a[href|="#lotsofthings"],a[href|="#billexpression"],a[href|="#didyamissme"],a[href|="#billdeal"],a[href|="#bipper"],a[href|="#bippermad"],a[href|="#blindeyeguy"],a[href|="#getem"],a[href|="#oooh"],a[href|="#meowmeow"],a[href|="#usausa"],a[href|="#blendin"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+background-image:url(https://b.thumbs.redditmedia.com/uP0f7ZBSUuiJLrFbGXyc4wYboaNyPbzp1Cxl2PCenIU.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#rbill"],a[href|="#rangrybill"],a[href|="#rlotsofthings"],a[href|="#rbillexpression"],a[href|="#rdidyamissme"],a[href|="#rbilldeal"],a[href|="#rbipper"],a[href|="#rbippermad"],a[href|="#rblindeyeguy"],a[href|="#rgetem"],a[href|="#roooh"],a[href|="#rmeowmeow"],a[href|="#rusausa"],a[href|="#rblendin"] {
+width:70px!important;
+height:70px!important;
+display:block;
+clear:none;
+float:left;
+transform:rotateY(180deg);
+background-image:url(https://b.thumbs.redditmedia.com/uP0f7ZBSUuiJLrFbGXyc4wYboaNyPbzp1Cxl2PCenIU.png)!important;
+cursor:default;
+color:transparent;
+}
+
+a[href|="#stanthink"],a[href|="#rstanthink"] {
+background-position:-70px -630px!important;
+}
+
+a[href|="#fordmad"],a[href|="#rfordmad"] {
+background-position:-140px -630px!important;
+}
+
+a[href|="#ducktective"],a[href|="#rducktective"] {
+background-position:-210px -630px!important;
+}
+
+a[href|="#billexpression"],a[href|="#rbillexpression"] {
+background-position:-210px 0;
+-webkit-animation:billHands .4s steps(2,end) infinite;
+animation:billHands .4s steps(2,end) infinite;
+}
+
+a[href|="#bill"],a[href|="#angrybill"],a[href|="#rbill"],a[href|="#rangrybill"],a[href|="#didyamissme"],a[href|="#rdidyamissme"],a[href|="#puppetdipper"],a[href|="#rpuppetdipper"],a[href|="#billdeal"],a[href|="#rbilldeal"],a[href|="#lotsofthings"],a[href|="#rlotsofthings"] {
+-webkit-animation:bill 3s infinite;
+animation:bill 3s infinite;
+}
+
+50% {
+transform:translate(0px,2px);
+-webkit-transform:translate(0px,2px);
+}
+
+100% {
+transform:translate(0px,-2px);
+-webkit-transform:translate(0px,-2px);
+}
+
+
+
+a[href|="#mabel"],a[href|="#rmabel"],a[href|="#soos"],a[href|="#rsoos"],a[href|="#bill"],a[href|="#rbill"] {
+background-position:0 0!important;
+}
+
+a[href|="#grumpymabel"],a[href|="#rgrumpymabel"],a[href|="#wendyread"],a[href|="#rwendyread"],a[href|="#didyamissme"],a[href|="#rdidyamissme"] {
+background-position:0 -70px!important;
+}
+
+
+
+
+
+a[href|="#mabelwat"],a[href|="#rmabelwat"],a[href|="#toomuch"],a[href|="#rtoomuch"],a[href|="#angrybill"],a[href|="#rangrybill"] {
+background-position:-70px 0!important;
+}
+
+a[href|="#mabelgoof"],a[href|="#rmabelgoof"],a[href|="#soosheart"],a[href|="#rsoosheart"],a[href|="#lotsofthings"],a[href|="#rlotsofthings"] {
+background-position:-140px 0!important;
+}
+
+a[href|="#mabelevil"],a[href|="#rmabelevil"],a[href|="#wendy"],a[href|="#rwendy"] {
+background-position:-210px 0!important;
+}
+
+a[href|="#partygurl"],a[href|="#rpartygurl"],a[href|="#wearewomen"],a[href|="#rwearewomen"],a[href|="#billdeal"],a[href|="#rbilldeal"] {
+background-position:-70px -70px!important;
+}
+
+a[href|="#thumbdown"],a[href|="#rthumbdown"],a[href|="#eyeroll"],a[href|="#reyeroll"],a[href|="#bipper"],a[href|="#rbipper"] {
+background-position:-140px -70px!important;
+}
+
+a[href|="#pout"],a[href|="#rpout"],a[href|="#candy"],a[href|="#rcandy"],a[href|="#bippermad"],a[href|="#rbippermad"] {
+background-position:-210px -70px!important;
+}
+
+a[href|="#happymabel"],a[href|="#rhappymabel"],a[href|="#grenda"],a[href|="#rgrenda"],a[href|="#blindeyeguy"],a[href|="#rblindeyeguy"] {
+background-position:0 -140px!important;
+}
+
+a[href|="#distressmabel"],a[href|="#rdistressmabel"],a[href|="#mcg"],a[href|="#rmcg"],a[href|="#getem"],a[href|="#rgetem"] {
+background-position:-70px -140px!important;
+}
+
+a[href|="#mabelgum"],a[href|="#rmabelgum"],a[href|="#mcevil"],a[href|="#rmcevil"],a[href|="#oooh"],a[href|="#roooh"] {
+background-position:-140px -140px!important;
+}
+
+a[href|="#mabelidk"],a[href|="#rmabelidk"],a[href|="#waddles"],a[href|="#rwaddles"],a[href|="#meowmeow"],a[href|="#rmeowmeow"] {
+background-position:-210px -140px!important;
+}
+
+a[href|="#cryofjoy"],a[href|="#rcryofjoy"],a[href|="#waddleswag"],a[href|="#rwaddleswag"],a[href|="#usausa"],a[href|="#rusausa"] {
+background-position:0 -210px!important;
+}
+
+a[href|="#mabelgross"],a[href|="#rmabelgross"],a[href|="#noooo"],a[href|="#rnoooo"],a[href|="#blendin"],a[href|="#rblendin"] {
+background-position:-70px -210px!important;
+}
+
+a[href|="#mabelsquee"],a[href|="#rmabelsquee"],a[href|="#gideon"],a[href|="#rgideon"] {
+background-position:-140px -210px!important;
+}
+
+a[href|="#disapproval"],a[href|="#rdisapproval"],a[href|="#gideonplan"],a[href|="#rgideonplan"] {
+background-position:-210px -210px!important;
+}
+
+a[href|="#dipmad"],a[href|="#rdipmad"],a[href|="#usethem"],a[href|="#rusethem"] {
+background-position:0 -280px!important;
+}
+
+a[href|="#paperjam"],a[href|="#rpaperjam"],a[href|="#budeon"],a[href|="#rbudeon"] {
+background-position:-70px -280px!important;
+}
+
+a[href|="#dipponder"],a[href|="#rdipponder"],a[href|="#budangry"],a[href|="#rbudangry"] {
+background-position:-140px -280px!important;
+}
+
+a[href|="#dipcheer"],a[href|="#rdipcheer"],a[href|="#robbie"],a[href|="#rrobbie"] {
+background-position:-210px -280px!important;
+}
+
+a[href|="#dippergross"],a[href|="#rdippergross"],a[href|="#robbiesoso"],a[href|="#rrobbiesoso"] {
+background-position:0 -350px!important;
+}
+
+a[href|="#indianadipper"],a[href|="#rindianadipper"],a[href|="#trigger"],a[href|="#rtrigger"] {
+background-position:-70px -350px!important;
+}
+
+a[href|="#dipsad"],a[href|="#rdipsad"],a[href|="#bighenry"],a[href|="#rbighenry"] {
+background-position:-140px -350px!important;
+}
+
+a[href|="#airquote"],a[href|="#rairquote"],a[href|="#gnome"],a[href|="#rgnome"] {
+background-position:-210px -350px!important;
+}
+
+a[href|="#dipawe"],a[href|="#rdipawe"],a[href|="#tad"],a[href|="#rtad"] {
+background-position:0 -420px!important;
+}
+
+a[href|="#dipcry"],a[href|="#rdipcry"],a[href|="#muted"],a[href|="#rmuted"] {
+background-position:-70px -420px!important;
+}
+
+a[href|="#dipslap"],a[href|="#rdipslap"],a[href|="#pacifiwhat"],a[href|="#rpacifiwhat"] {
+background-position:-140px -420px!important;
+}
+
+a[href|="#pinescream"],a[href|="#rpinescream"],a[href|="#pacifisad"],a[href|="#rpacifisad"] {
+background-position:-210px -420px!important;
+}
+
+a[href|="#grunkle"],a[href|="#rgrunkle"],a[href|="#puppetmabel"],a[href|="#rpuppetmabel"] {
+background-position:0 -490px!important;
+}
+
+a[href|="#stanwow"],a[href|="#rstanwow"],a[href|="#puppetdipper"],a[href|="#rpuppetdipper"] {
+background-position:-70px -490px!important;
+}
+
+a[href|="#grunklemad"],a[href|="#rgrunklemad"],a[href|="#puppetstan"],a[href|="#rpuppetstan"] {
+background-position:-140px -490px!important;
+}
+
+a[href|="#heraim"],a[href|="#rheraim"],a[href|="#bwaaa"],a[href|="#rbwaaa"] {
+background-position:-210px -490px!important;
+}
+
+a[href|="#onedoesnot"],a[href|="#ronedoesnot"],a[href|="#kermit"],a[href|="#rkermit"] {
+background-position:0 -560px!important;
+}
+
+a[href|="#eyebrowstan"],a[href|="#reyebrowstan"],a[href|="#mybrother"],a[href|="#rmybrother"] {
+background-position:-70px -560px!important;
+}
+
+a[href|="#icansellthis"],a[href|="#ricansellthis"],a[href|="#notimpressed"],a[href|="#rnotimpressed"] {
+background-position:-140px -560px!important;
+}
+
+a[href|="#trytosmile"],a[href|="#rtrytosmile"],a[href|="#impressed"],a[href|="#rimpressed"] {
+background-position:-210px -560px!important;
+}
+
+a[href|="#dippyfresh"],a[href|="#rdippyfresh"],a[href|="#lookonhisface"],a[href|="#rlookonhisface"] {
+background-position:0 -630px!important;
+}
+*/
+
+a[href|="#joaje"] {
+    background: url(https://j-co.ga/BetterGFMotesDB/heraim.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left
+}
+
+/* The emotes below are from /r/gravityfalls as of Feburary 2016. I *think* everything is stable. */
+
+a[href|="#mabel"],
+a[href|="#mabelwat"],
+a[href|="#mabelgoof"],
+a[href|="#mabelevil"],
+a[href|="#grumpymabel"],
+a[href|="#partygurl"],
+a[href|="#thumbdown"],
+a[href|="#pout"],
+a[href|="#happymabel"],
+a[href|="#distressmabel"],
+a[href|="#mabelgum"],
+a[href|="#mabelidk"],
+a[href|="#cryofjoy"],
+a[href|="#mabelgross"],
+a[href|="#mabelsquee"],
+a[href|="#disapproval"],
+a[href|="#death"],
+a[href|="#excited"],
+a[href|="#mabelcry"],
+a[href|="#cutemabel"],
+a[href|="#dipmad"],
+a[href|="#paperjam"],
+a[href|="#dipponder"],
+a[href|="#dipcheer"],
+a[href|="#dippergross"],
+a[href|="#indianadipper"],
+a[href|="#dipsad"],
+a[href|="#airquote"],
+a[href|="#dipawe"],
+a[href|="#dipcry"],
+a[href|="#dipslap"],
+a[href|="#pinescream"],
+a[href|="#throwup"],
+a[href|="#manlydip"],
+a[href|="#dipcheer"],
+a[href|="#dipthink"],
+a[href|="#nope"],
+a[href|="#bodyisready"],
+a[href|="#pixelaugh"],
+a[href|="#alex"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    background-image: url("https://b.thumbs.redditmedia.com/vpReFtiX9PwMH5N2QTLdHhF3y2ZXfHib_qj_joseG5w.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#rmabel"],
+a[href|="#rmabelwat"],
+a[href|="#rmabelgoof"],
+a[href|="#rmabelevil"],
+a[href|="#rgrumpymabel"],
+a[href|="#rpartygurl"],
+a[href|="#rthumbdown"],
+a[href|="#rpout"],
+a[href|="#rhappymabel"],
+a[href|="#rdistressmabel"],
+a[href|="#rmabelgum"],
+a[href|="#rmabelidk"],
+a[href|="#rcryofjoy"],
+a[href|="#rmabelgross"],
+a[href|="#rmabelsquee"],
+a[href|="#rdisapproval"],
+a[href|="#rdeath"],
+a[href|="#rexcited"],
+a[href|="#rmabelcry"],
+a[href|="#rcutemabel"],
+a[href|="#rdipmad"],
+a[href|="#rpaperjam"],
+a[href|="#rdipponder"],
+a[href|="#rdipcheer"],
+a[href|="#rdippergross"],
+a[href|="#rindianadipper"],
+a[href|="#rdipsad"],
+a[href|="#rairquote"],
+a[href|="#rdipawe"],
+a[href|="#rdipcry"],
+a[href|="#rdipslap"],
+a[href|="#rpinescream"],
+a[href|="#rthrowup"],
+a[href|="#rmanlydip"],
+a[href|="#rdipcheer"],
+a[href|="#rdipthink"],
+a[href|="#rnope"],
+a[href|="#rbodyisready"],
+a[href|="#rpixelaugh"],
+a[href|="#ralex"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    transform: rotateY(180deg);
+    background-image: url("https://b.thumbs.redditmedia.com/vpReFtiX9PwMH5N2QTLdHhF3y2ZXfHib_qj_joseG5w.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#grunkle"],
+a[href|="#stanwow"],
+a[href|="#grunklemad"],
+a[href|="#heraim"],
+a[href|="#onedoesnot"],
+a[href|="#eyebrowstan"],
+a[href|="#icansellthis"],
+a[href|="#trytosmile"],
+a[href|="#burnit"],
+a[href|="#soos"],
+a[href|="#toomuch"],
+a[href|="#soosheart"],
+a[href|="#holysoos"],
+a[href|="#wendy"],
+a[href|="#wendyread"],
+a[href|="#wearewomen"],
+a[href|="#eyeroll"],
+a[href|="#yesido"],
+a[href|="#mybrother"],
+a[href|="#lookonhisface"],
+a[href|="#fordmad"],
+a[href|="#eesh"],
+a[href|="#fordscream"],
+a[href|="#candy"],
+a[href|="#grenda"],
+a[href|="#mcg"],
+a[href|="#mcevil"],
+a[href|="#waddles"],
+a[href|="#waddleswag"],
+a[href|="#noooo"],
+a[href|="#gideon"],
+a[href|="#gideonplan"],
+a[href|="#usethem"],
+a[href|="#budeon"],
+a[href|="#budangry"],
+a[href|="#trigger"],
+a[href|="#prettyface"],
+a[href|="#matchmade"],
+a[href|="#scarytree"],
+a[href|="#sadt"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    background-image: url("https://b.thumbs.redditmedia.com/dXuMjre2JvM38jTulu18i0HEq6U5dMIAnlJbrd_oBOo.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#rgrunkle"],
+a[href|="#rstanwow"],
+a[href|="#rgrunklemad"],
+a[href|="#rheraim"],
+a[href|="#ronedoesnot"],
+a[href|="#reyebrowstan"],
+a[href|="#ricansellthis"],
+a[href|="#rtrytosmile"],
+a[href|="#rburnit"],
+a[href|="#rsoos"],
+a[href|="#rtoomuch"],
+a[href|="#rsoosheart"],
+a[href|="#rholysoos"],
+a[href|="#rwendy"],
+a[href|="#rwendyread"],
+a[href|="#rwearewomen"],
+a[href|="#reyeroll"],
+a[href|="#ryesido"],
+a[href|="#rmybrother"],
+a[href|="#rlookonhisface"],
+a[href|="#rfordmad"],
+a[href|="#reesh"],
+a[href|="#rfordscream"],
+a[href|="#rcandy"],
+a[href|="#rgrenda"],
+a[href|="#rmcg"],
+a[href|="#rmcevil"],
+a[href|="#rwaddles"],
+a[href|="#rwaddleswag"],
+a[href|="#rnoooo"],
+a[href|="#rgideon"],
+a[href|="#rgideonplan"],
+a[href|="#rusethem"],
+a[href|="#rbudeon"],
+a[href|="#rbudangry"],
+a[href|="#rtrigger"],
+a[href|="#rprettyface"],
+a[href|="#rmatchmade"],
+a[href|="#rscarytree"],
+a[href|="#rsadt"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    transform: rotateY(180deg);
+    background-image: url("https://b.thumbs.redditmedia.com/dXuMjre2JvM38jTulu18i0HEq6U5dMIAnlJbrd_oBOo.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#robbie"],
+a[href|="#robbiesoso"],
+a[href|="#bighenry"],
+a[href|="#gnome"],
+a[href|="#tad"],
+a[href|="#muted"],
+a[href|="#pacifiwhat"],
+a[href|="#pacifisad"],
+a[href|="#pazmad"],
+a[href|="#puppetmabel"],
+a[href|="#puppetdipper"],
+a[href|="#puppetstan"],
+a[href|="#bwaaa"],
+a[href|="#kermit"],
+a[href|="#notimpressed"],
+a[href|="#impressed"],
+a[href|="#stanthink"],
+a[href|="#ducktective"],
+a[href|="#bill"],
+a[href|="#billexpression"],
+a[href|="#angrybill"],
+a[href|="#lotsofthings"],
+a[href|="#didyamissme"],
+a[href|="#billdeal"],
+a[href|="#billohmy"],
+a[href|="#blackbill"],
+a[href|="#billlaugh"],
+a[href|="#frenchbills"],
+a[href|="#bipper"],
+a[href|="#bippermad"],
+a[href|="#blindeyeguy"],
+a[href|="#getem"],
+a[href|="#oooh"],
+a[href|="#meowmeow"],
+a[href|="#usausa"],
+a[href|="#blendin"],
+a[href|="#dippyfresh"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    background-image: url("https://b.thumbs.redditmedia.com/7O0GEfO6jMz3ApSz8m7LidYLmhBEAT5p7FC9GlmFojY.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#rrobbie"],
+a[href|="#rrobbiesoso"],
+a[href|="#rbighenry"],
+a[href|="#rgnome"],
+a[href|="#rtad"],
+a[href|="#rmuted"],
+a[href|="#rpacifiwhat"],
+a[href|="#rpacifisad"],
+a[href|="#rpazmad"],
+a[href|="#rpuppetmabel"],
+a[href|="#rpuppetdipper"],
+a[href|="#rpuppetstan"],
+a[href|="#rbwaaa"],
+a[href|="#rkermit"],
+a[href|="#rnotimpressed"],
+a[href|="#rimpressed"],
+a[href|="#rstanthink"],
+a[href|="#rducktective"],
+a[href|="#rbill"],
+a[href|="#rbillexpression"],
+a[href|="#rangrybill"],
+a[href|="#rlotsofthings"],
+a[href|="#rdidyamissme"],
+a[href|="#rbilldeal"],
+a[href|="#rbillohmy"],
+a[href|="#rblackbill"],
+a[href|="#rbilllaugh"],
+a[href|="#rfrenchbills"],
+a[href|="#rbipper"],
+a[href|="#rbippermad"],
+a[href|="#rblindeyeguy"],
+a[href|="#rgetem"],
+a[href|="#roooh"],
+a[href|="#rmeowmeow"],
+a[href|="#rusausa"],
+a[href|="#rblendin"],
+a[href|="#rdippyfresh"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    transform: rotateY(180deg);
+    background-image: url("https://b.thumbs.redditmedia.com/7O0GEfO6jMz3ApSz8m7LidYLmhBEAT5p7FC9GlmFojY.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#mabel"],
+a[href|="#rmabel"] { background-position: 0px 0px!important }
+a[href|="#mabelwat"],
+a[href|="#rmabelwat"] { background-position: -70px 0px!important }
+a[href|="#mabelgoof"],
+a[href|="#rmabelgoof"] { background-position: -140px 0px!important }
+a[href|="#mabelevil"],
+a[href|="#rmabelevil"] { background-position: -210px 0px!important }
+a[href|="#grumpymabel"],
+a[href|="#rgrumpymabel"] { background-position: 0px -70px!important }
+a[href|="#partygurl"],
+a[href|="#rpartygurl"] { background-position: -70px -70px!important }
+a[href|="#thumbdown"],
+a[href|="#rthumbdown"] { background-position: -140px -70px!important }
+a[href|="#pout"],
+a[href|="#rpout"] { background-position: -210px -70px!important }
+a[href|="#happymabel"],
+a[href|="#rhappymabel"] { background-position: 0px -140px!important }
+a[href|="#distressmabel"],
+a[href|="#rdistressmabel"] { background-position: -70px -140px!important }
+a[href|="#mabelgum"],
+a[href|="#rmabelgum"] { background-position: -140px -140px!important }
+a[href|="#mabelidk"],
+a[href|="#rmabelidk"] { background-position: -210px -140px!important }
+a[href|="#cryofjoy"],
+a[href|="#rcryofjoy"] { background-position: 0px -210px!important }
+a[href|="#mabelgross"],
+a[href|="#rmabelgross"] { background-position: -70px -210px!important }
+a[href|="#mabelsquee"],
+a[href|="#rmabelsquee"] { background-position: -140px -210px!important }
+a[href|="#disapproval"],
+a[href|="#rdisapproval"] { background-position: -210px -210px!important }
+a[href|="#death"],
+a[href|="#rdeath"] { background-position: 0px -280px!important }
+a[href|="#excited"],
+a[href|="#rexcited"] { background-position: -70px -280px!important }
+a[href|="#mabelcry"],
+a[href|="#rmabelcry"] { background-position: -140px -280px!important }
+a[href|="#cutemabel"],
+a[href|="#rcutemabel"] { background-position: -210px -280px!important }
+a[href|="#dipmad"],
+a[href|="#rdipmad"] { background-position: 0px -350px!important }
+a[href|="#paperjam"],
+a[href|="#rpaperjam"] { background-position: -70px -350px!important }
+a[href|="#dipponder"],
+a[href|="#rdipponder"] { background-position: -140px -350px!important }
+a[href|="#dipcheer"],
+a[href|="#rdipcheer"] { background-position: -210px -350px!important }
+a[href|="#dippergross"],
+a[href|="#rdippergross"] { background-position: 0px -420px!important }
+a[href|="#indianadipper"],
+a[href|="#rindianadipper"] { background-position: -70px -420px!important }
+a[href|="#dipsad"],
+a[href|="#rdipsad"] { background-position: -140px -420px!important }
+a[href|="#airquote"],
+a[href|="#rairquote"] { background-position: -210px -420px!important }
+a[href|="#dipawe"],
+a[href|="#rdipawe"] { background-position: 0px -490px!important }
+a[href|="#dipcry"],
+a[href|="#rdipcry"] { background-position: -70px -490px!important }
+a[href|="#dipslap"],
+a[href|="#rdipslap"] { background-position: -140px -490px!important }
+a[href|="#pinescream"],
+a[href|="#rpinescream"] { background-position: -210px -490px!important }
+a[href|="#throwup"],
+a[href|="#rthrowup"] { background-position: 0px -560px!important }
+a[href|="#manlydip"],
+a[href|="#rmanlydip"] { background-position: -70px -560px!important }
+a[href|="#dipcheer"],
+a[href|="#rdipcheer"] { background-position: -140px -560px!important }
+a[href|="#dipthink"],
+a[href|="#rdipthink"] { background-position: -210px -560px!important }
+a[href|="#nope"],
+a[href|="#rnope"] { background-position: 0px -630px!important }
+a[href|="#bodyisready"],
+a[href|="#rbodyisready"] { background-position: -70px -630px!important }
+a[href|="#pixelaugh"],
+a[href|="#rpixelaugh"] { background-position: -140px -630px!important }
+a[href|="#alex"],
+a[href|="#ralex"] { background-position: -210px -630px!important }
+a[href|="#grunkle"],
+a[href|="#rgrunkle"] { background-position: 0px 0px!important }
+a[href|="#stanwow"],
+a[href|="#rstanwow"] { background-position: -70px 0px!important }
+a[href|="#grunklemad"],
+a[href|="#rgrunklemad"] { background-position: -140px 0px!important }
+a[href|="#heraim"],
+a[href|="#rheraim"] { background-position: -210px 0px!important }
+a[href|="#onedoesnot"],
+a[href|="#ronedoesnot"] { background-position: 0px -70px!important }
+a[href|="#eyebrowstan"],
+a[href|="#reyebrowstan"] { background-position: -70px -70px!important }
+a[href|="#icansellthis"],
+a[href|="#ricansellthis"] { background-position: -140px -70px!important }
+a[href|="#trytosmile"],
+a[href|="#rtrytosmile"] { background-position: -210px -70px!important }
+a[href|="#burnit"],
+a[href|="#rburnit"] { background-position: 0px -140px!important }
+a[href|="#soos"],
+a[href|="#rsoos"] { background-position: -70px -140px!important }
+a[href|="#toomuch"],
+a[href|="#rtoomuch"] { background-position: -140px -140px!important }
+a[href|="#soosheart"],
+a[href|="#rsoosheart"] { background-position: -210px -140px!important }
+a[href|="#holysoos"],
+a[href|="#rholysoos"] { background-position: 0px -210px!important }
+a[href|="#wendy"],
+a[href|="#rwendy"] { background-position: -70px -210px!important }
+a[href|="#wendyread"],
+a[href|="#rwendyread"] { background-position: -140px -210px!important }
+a[href|="#wearewomen"],
+a[href|="#rwearewomen"] { background-position: -210px -210px!important }
+a[href|="#eyeroll"],
+a[href|="#reyeroll"] { background-position: 0px -280px!important }
+a[href|="#yesido"],
+a[href|="#ryesido"] { background-position: -70px -280px!important }
+a[href|="#mybrother"],
+a[href|="#rmybrother"] { background-position: -140px -280px!important }
+a[href|="#lookonhisface"],
+a[href|="#rlookonhisface"] { background-position: -210px -280px!important }
+a[href|="#fordmad"],
+a[href|="#rfordmad"] { background-position: 0px -350px!important }
+a[href|="#eesh"],
+a[href|="#reesh"] { background-position: -70px -350px!important }
+a[href|="#fordscream"],
+a[href|="#rfordscream"] { background-position: -140px -350px!important }
+a[href|="#candy"],
+a[href|="#rcandy"] { background-position: -210px -350px!important }
+a[href|="#grenda"],
+a[href|="#rgrenda"] { background-position: 0px -420px!important }
+a[href|="#mcg"],
+a[href|="#rmcg"] { background-position: -70px -420px!important }
+a[href|="#mcevil"],
+a[href|="#rmcevil"] { background-position: -140px -420px!important }
+a[href|="#waddles"],
+a[href|="#rwaddles"] { background-position: -210px -420px!important }
+a[href|="#waddleswag"],
+a[href|="#rwaddleswag"] { background-position: 0px -490px!important }
+a[href|="#noooo"],
+a[href|="#rnoooo"] { background-position: -70px -490px!important }
+a[href|="#gideon"],
+a[href|="#rgideon"] { background-position: -140px -490px!important }
+a[href|="#gideonplan"],
+a[href|="#rgideonplan"] { background-position: -210px -490px!important }
+a[href|="#usethem"],
+a[href|="#rusethem"] { background-position: 0px -560px!important }
+a[href|="#budeon"],
+a[href|="#rbudeon"] { background-position: -70px -560px!important }
+a[href|="#budangry"],
+a[href|="#rbudangry"] { background-position: -140px -560px!important }
+a[href|="#trigger"],
+a[href|="#rtrigger"] { background-position: -210px -560px!important }
+a[href|="#prettyface"],
+a[href|="#rprettyface"] { background-position: 0px -630px!important }
+a[href|="#matchmade"],
+a[href|="#rmatchmade"] { background-position: -70px -630px!important }
+a[href|="#scarytree"],
+a[href|="#rscarytree"] { background-position: -140px -630px!important }
+a[href|="#sadt"],
+a[href|="#rsadt"] { background-position: -210px -630px!important }
+a[href|="#robbie"],
+a[href|="#rrobbie"] { background-position: 0px 0px!important }
+a[href|="#robbiesoso"],
+a[href|="#rrobbiesoso"] { background-position: -70px 0px!important }
+a[href|="#bighenry"],
+a[href|="#rbighenry"] { background-position: -140px 0px!important }
+a[href|="#gnome"],
+a[href|="#rgnome"] { background-position: -210px 0px!important }
+a[href|="#tad"],
+a[href|="#rtad"] { background-position: 0px -70px!important }
+a[href|="#muted"],
+a[href|="#rmuted"] { background-position: -70px -70px!important }
+a[href|="#pacifiwhat"],
+a[href|="#rpacifiwhat"] { background-position: -140px -70px!important }
+a[href|="#pacifisad"],
+a[href|="#rpacifisad"] { background-position: -210px -70px!important }
+a[href|="#pazmad"],
+a[href|="#rpazmad"] { background-position: 0px -140px!important }
+a[href|="#puppetmabel"],
+a[href|="#rpuppetmabel"] { background-position: -70px -140px!important }
+a[href|="#puppetdipper"],
+a[href|="#rpuppetdipper"] { background-position: -140px -140px!important }
+a[href|="#puppetstan"],
+a[href|="#rpuppetstan"] { background-position: -210px -140px!important }
+a[href|="#bwaaa"],
+a[href|="#rbwaaa"] { background-position: 0px -210px!important }
+a[href|="#kermit"],
+a[href|="#rkermit"] { background-position: -70px -210px!important }
+a[href|="#notimpressed"],
+a[href|="#rnotimpressed"] { background-position: -140px -210px!important }
+a[href|="#impressed"],
+a[href|="#rimpressed"] { background-position: -210px -210px!important }
+a[href|="#stanthink"],
+a[href|="#rstanthink"] { background-position: 0px -280px!important }
+a[href|="#ducktective"],
+a[href|="#rducktective"] { background-position: -70px -280px!important }
+a[href|="#bill"],
+a[href|="#rbill"] { background-position: -140px -280px!important }
+a[href|="#billexpression"],
+a[href|="#rbillexpression"] { background-position: -210px -280px!important }
+a[href|="#angrybill"],
+a[href|="#rangrybill"] { background-position: 0px -350px!important }
+a[href|="#lotsofthings"],
+a[href|="#rlotsofthings"] { background-position: -70px -350px!important }
+a[href|="#didyamissme"],
+a[href|="#rdidyamissme"] { background-position: -140px -350px!important }
+a[href|="#billdeal"],
+a[href|="#rbilldeal"] { background-position: -210px -350px!important }
+a[href|="#billohmy"],
+a[href|="#rbillohmy"] { background-position: 0px -420px!important }
+a[href|="#blackbill"],
+a[href|="#rblackbill"] { background-position: -70px -420px!important }
+a[href|="#billlaugh"],
+a[href|="#rbilllaugh"] { background-position: -140px -420px!important }
+a[href|="#frenchbills"],
+a[href|="#rfrenchbills"] { background-position: -210px -420px!important }
+a[href|="#bipper"],
+a[href|="#rbipper"] { background-position: 0px -490px!important }
+a[href|="#bippermad"],
+a[href|="#rbippermad"] { background-position: -70px -490px!important }
+a[href|="#blindeyeguy"],
+a[href|="#rblindeyeguy"] { background-position: -140px -490px!important }
+a[href|="#getem"],
+a[href|="#rgetem"] { background-position: -210px -490px!important }
+a[href|="#oooh"],
+a[href|="#roooh"] { background-position: 0px -560px!important }
+a[href|="#meowmeow"],
+a[href|="#rmeowmeow"] { background-position: -70px -560px!important }
+a[href|="#usausa"],
+a[href|="#rusausa"] { background-position: -140px -560px!important }
+a[href|="#blendin"],
+a[href|="#rblendin"] { background-position: -210px -560px!important }
+a[href|="#dippyfresh"],
+a[href|="#rdippyfresh"] { background-position: 0px -630px!important }
+@keyframes billHands { 
+    from { background-position: -210px -280px }
+    to { background-position: -350px -280px }
+}
+@-webkit-keyframes billHands { 
+    from { background-position: -210px -280px }
+    to { background-position: -350px -280px }
+}
+a[href|="#billexpression"],
+a[href|="#rbillexpression"] {
+    -webkit-animation: billHands .4s steps(2,end) infinite;
+    animation: billHands .4s steps(2,end) infinite;
+}
+a[href|="#bill"],
+a[href|="#angrybill"],
+a[href|="#rbill"],
+a[href|="#rangrybill"],
+a[href|="#didyamissme"],
+a[href|="#rdidyamissme"],
+a[href|="#puppetdipper"],
+a[href|="#rpuppetdipper"],
+a[href|="#billdeal"],
+a[href|="#rbilldeal"],
+a[href|="#lotsofthings"],
+a[href|="#rlotsofthings"] {
+    -webkit-animation: bill 3s infinite;
+    animation: bill 3s infinite;
+}
+@keyframes bill { 
+    0% { transform: translate(0px,-2px) }
+    50% { transform: translate(0px,2px) }
+    100% { transform: translate(0px,-2px) }
+}
+@-webkit-keyframes bill { 
+    0% { -webkit-transform: translate(0px,-2px) }
+    50% { -webkit-transform: translate(0px,2px) }
+    100% { -webkit-transform: translate(0px,-2px) }
+}
+
+a[href|="#star"],
+a[href|="#steven"],
+a[href|="#wirt"],
+a[href|="#wander"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    background-image: url("https://b.thumbs.redditmedia.com/Pu_CTrTbFNGRqm0qaNzqzmrOgk08RWp6-_KR9DdlY0U.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#rstar"],
+a[href|="#rsteven"],
+a[href|="#rwirt"],
+a[href|="#rwander"] {
+    width: 70px!important;
+    height: 70px!important;
+    display: block;
+    clear: none;
+    float: left;
+    transform: rotateY(180deg);
+    background-image: url("https://b.thumbs.redditmedia.com/Pu_CTrTbFNGRqm0qaNzqzmrOgk08RWp6-_KR9DdlY0U.png")!important;
+    cursor: default;
+    color: transparent;
+}
+a[href|="#star"],
+a[href|="#rstar"] { background-position: 0px 0px!important }
+a[href|="#steven"],
+a[href|="#rsteven"] { background-position: 0px -70px!important }
+a[href|="#wirt"],
+a[href|="#rwirt"] { background-position: 0px -140px!important }
+a[href|="#wander"],
+a[href|="#rwander"] { background-position: 0px -210px!important }
+
+/* /r/TakeBackGravityFalls has allowed us to use their emotes. Here they are (some changed because of conflicts). Please inform the moderators of the subreddit before using these, as they don't allow distribution of this information. */
+
+a[href|='#mabeltbgf'], a[href|='#mayhog'], a[href|='#stan'], a[href|='#ford'], a[href|='#dipper'], a[href|='#dipdoh'], a[href|='#wendyup'], a[href|='#wendyreal'],a[href|='#wendylight'], a[href|='#udabest'], a[href|='#billtbgf'], a[href|='#stanbucks'], a[href|='#blindeye'], a[href|='#extroar']
+{
+  width:70px !important;
+  height:70px !important; 
+  display: block;
+  clear: none;
+  float: left;
+  background-image: url(https://j-co.ga/BetterGFMotesDB/TakeBackGravityFallsSpritesheet.png) !important;
+  cursor:default;   
+ /* Picture frame
+  color:transparent;
+  margin: 2px 5px 2px 2px;
+  border-width: 3px 3px 10px 3px;
+  border-color: #F2F2F2;
+  border-style: solid; 
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  -webkit-box-shadow: 1px 1px 2px black;
+  -moz-box-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px black;
+    */
+}
+
+a[href|='#rmabeltbgf'], a[href|='#rmayhog'], a[href|='#rstan'], a[href|='#rford'], a[href|='#rdipper'], a[href|='#rdipdoh'], a[href|='#rwendyup'], a[href|='#rwendyreal'], a[href|='##wendylight'], a[href|='#rudabest'] a[href|='#rbilltbgf'], a[href|='#rstanbucks'], a[href|='#rblindeye'], a[href|='#rextroar']
+{
+  width:70px !important; 
+  height:70px !important; 
+  display: block;
+  clear: none;
+  float: left;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-image: url(https://j-co.ga/BetterGFMotesDB/TakeBackGravityFallsSpritesheet.png) !important;
+  cursor:default;
+  /* Picture frame
+  color:transparent;
+  margin: 2px 5px 2px 2px;
+  -webkit-transform: scaleX(-1) rotate(1deg);
+  -moz-transform: scaleX(-1) rotate(1deg); 
+  -ms-transform: scaleX(-1) rotate(1deg);
+  -o-transform: scaleX(-1) rotate(1deg);
+  transform: scaleX(-1) rotate(1deg);
+  border-width: 3px 3px 10px 3px; 
+  border-color: #F2F2F2; 
+  border-style: solid;
+  -webkit-box-shadow: -1px 1px 2px black;
+  -moz-box-shadow: -1px 1px 2px black;
+  box-shadow: -1px 1px 2px black;
+    */
+}
+
+a[href|='#mabeltbgf'], a[href|='#rmabeltbgf']
+{
+  background-position: 0px 0px !important;
+}
+a[href|='#mayhog'], a[href|='#rmayhog']
+{
+  background-position: -70px 0px !important;
+}
+a[href|='#stan'], a[href|='#rstan']
+{
+  background-position: -140px 0px !important;
+}
+a[href|='#ford'], a[href|='#rford']
+{
+  background-position: -210px 0px !important;
+}
+a[href|='#dipper'], a[href|='#rdipper']
+{
+  background-position: 0px -70px !important;
+}
+a[href|='#dipdoh'], a[href|='#rdipdoh']
+{
+  background-position: -70px -70px !important;
+}
+a[href|='#wendyup'], a[href|='#rwendyup']
+{
+  background-position: -140px -70px !important;
+}
+a[href|='#wendyreal'], a[href|='#rwendyreal']
+{
+    background-position: -210px -70px !important;
+}
+
+a[href|='#wendylight'], a[href|='#rwendylight']
+{
+    background-position: 0px -560px !important;
+}
+
+a[href|='#wendylight']:hover
+{
+    background-position: -70px -560px !important;
+}
+
+a[href|='#udabest'], a[href|='#rudabest']
+{
+    background-position: -210px -560px !important;
+    border: none;
+    box-shadow: none;
+}
+
+a[href|='#billtbgf'], a[href|='#rbilltbgf']
+{
+    background-position: 0px -630px !important;
+    border: none;
+    box-shadow: none;
+}
+a[href|='#stanbucks'], a[href|='#rstanbucks']
+{
+    background-position: -70px -630px !important;
+    border: none;
+    box-shadow: none;
+}
+a[href|='#blindeye'], a[href|='#rblindeye']
+{
+    background-position: -140px -630px !important;
+    border: none;
+    box-shadow: none;
+}
+a[href|='#extroar'], a[href|='#rextroar']
+{
+    background-position: -210px -630px !important;
+    border: none;
+    box-shadow: none;
+}
