@@ -35,10 +35,3 @@ body{
 .material-icons{
     color:white;
 }
-
-.BetterGFMotesSelectScreen {
-    visibility: hidden
-    z-index: -1;
-    border-style: solid;
-    border-width: 15px;
-}
