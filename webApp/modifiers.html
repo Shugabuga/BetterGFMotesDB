@@ -1,0 +1,378 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+
+
+
+
+Note: The body of the original version, as with the text and the color scheme, has been replaced by me (/u/HeyItsShuga). DataTables support was also added in, as with other libraries.
+
+-->
+<html lang="en">
+
+<div class="body">
+  <head>
+
+      <script src="lib/jquery.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://j-co.ga/BetterGFMotesDB/css/style.css"/>
+      <script src="lib/tableActivate.js"></script>
+      <script type="text/javascript" src="lib/datatables.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://j-co.ga/BetterGFMotesDB/css/datatables.min.css"/>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>BetterGFMotes</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://j-co.ga/BetterGFMotesDB/css/roboto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+       <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_green-orange.min.css" />
+    <link rel="stylesheet" href="https://j-co.ga/BetterGFMotesDB/css/styles.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--teal-100 mdl-color-text--white-600" style="background-color:#139180!important; color:white!important;">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Modifiers</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="search" id="search">
+              <label class="mdl-textfield__label" for="search">Search for modifiers...</label>
+            </div>
+          </div>
+
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <img src="images/user.png" class="demo-avatar">
+          <div class="demo-avatar-dropdown">
+            <span>BetterGFMotes</span>
+            <div class="mdl-layout-spacer"></div>
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">info</i>
+              <span class="visuallyhidden">Version</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item"><i class="material-icons"></i>v. 0.6.0</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a href="popup.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">photo</i>Emotes</a>
+          <a href="modifiers.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">brush</i>Modifers</a>
+          <a href="credits.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">contacts</i>Credits</a>
+          <!-- a href="settings.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a -->
+          <div class="mdl-layout-spacer"></div>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+
+
+
+     <table class="mdl-data-table mdl-js-data-table" id="table">
+                        <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Modifier Name</th>
+                                <th class="mdl-data-table__cell--non-numeric">Description</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-slide</td>
+                              <td class="mdl-data-table__cell--non-numeric">Slides the emote across the post.</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-shift</td>
+                              <td class="mdl-data-table__cell--non-numeric">Slowly slides the emote across the post.</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-xspin</td>
+                              <td class="mdl-data-table__cell--non-numeric">Spins emote in x axis</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-yspin</td>
+                              <td class="mdl-data-table__cell--non-numeric">Spins emote in y axis</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-zspin</td>
+                              <td class="mdl-data-table__cell--non-numeric">Spins emote in z axis</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-!zspin</td>
+                              <td class="mdl-data-table__cell--non-numeric">Reverses -zspin</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-s1 through -s15</td>
+                              <td class="mdl-data-table__cell--non-numeric">Change emote speed/td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">-!spin</td>
+                              <td class="mdl-data-table__cell--non-numeric">Spins emote "randomly"</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">[TEXT](#white)</td>
+                              <td class="mdl-data-table__cell--non-numeric">Changes text color to white.</td>
+                          </tr>
+                          <tr>
+                              <td class="mdl-data-table__cell--non-numeric">[TEXT](#txt)</td>
+                              <td class="mdl-data-table__cell--non-numeric">Changes text color to black.<i style="display:none">[TEXT](#black)</i></td>
+                          </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-nophoto</td>
+                                <td class="mdl-data-table__cell--non-numeric">Removes the border from -photo.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-r</td>
+                                <td class="mdl-data-table__cell--non-numeric">Flips the emote horizontally</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-up or -f</td>
+                                <td class="mdl-data-table__cell--non-numeric">Flips the emote vertically</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-d</td>
+                                <td class="mdl-data-table__cell--non-numeric">Flips the emote horizontally when hovered.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-spin</td>
+                                <td class="mdl-data-table__cell--non-numeric">Spins the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-wobble or -rock</td>
+                                <td class="mdl-data-table__cell--non-numeric">Rocks the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-photo</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a polaroid border around the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-smoothslide</td>
+                                <td class="mdl-data-table__cell--non-numeric">Slides the emote across the post.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-intenseglitch</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a glitch overlay to the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-glitch</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a glitch overlay to the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-supersparkle</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a sparkley overlay to the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-sparkle</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a sparkley overlay to the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-glitter</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds a glittery overlay to the emote.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-[NUMBER]</td>
+                                <td class="mdl-data-table__cell--non-numeric">Rotates the emote by [NUMBER] degrees.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-h[NUMBER]</td>
+                                <td class="mdl-data-table__cell--non-numeric">Shifts the hue by [NUMBER] degrees.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-intensifies</td>
+                                <td class="mdl-data-table__cell--non-numeric">Shakes the emote intensely.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#spoiler)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Adds spoiler alerts to comments.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#rainbow)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Makes text change colors.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#times)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text font to Time New Roman.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#sans)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text font to Comic Sans.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#papyrus)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text font to Papyrus.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#cipher)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Decodes Caesar Cipher in comments.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-shadow</td>
+                                <td class="mdl-data-table__cell--non-numeric">Makes the emote black.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-i</td>
+                                <td class="mdl-data-table__cell--non-numeric">Shifts the emote's hue by 180°</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#cyan)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to cyan.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#gray)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to gray.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#orange)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to orange.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#pink)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to pink.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#lime)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to lime green.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#purple)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to purple.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#yellow)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to yellow.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#green)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to green.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#red)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to red.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">[TEXT](#blue)</td>
+                                <td class="mdl-data-table__cell--non-numeric">Changes text color to blue.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-sepia</td>
+                                <td class="mdl-data-table__cell--non-numeric">Displays emote in sepia.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-bw or -mono</td>
+                                <td class="mdl-data-table__cell--non-numeric">Displays emote in monotone.<i style="display:none">black and white</i></td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-invert</td>
+                                <td class="mdl-data-table__cell--non-numeric">Inverts emote colors.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-in</td>
+                                <td class="mdl-data-table__cell--non-numeric">Displays emotes inline with text.</td>
+                            </tr>
+                            <tr>
+                                <td class="mdl-data-table__cell--non-numeric">-blur</td>
+                                <td class="mdl-data-table__cell--non-numeric">Blurs emote.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+      </main>
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <mask id="piemask" maskContentUnits="objectBoundingBox">
+            <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+            <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
+          </mask>
+          <g id="piechart">
+            <circle cx=0.5 cy=0.5 r=0.5 />
+            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
+          </g>
+        </defs>
+      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <g id="chart">
+            <g id="Gridlines">
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" />
+            </g>
+            <g id="Numbers">
+              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
+              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
+              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
+              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
+              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
+              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
+              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
+              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
+              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
+              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
+              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
+              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
+            </g>
+            <g id="Layer_5">
+              <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
+              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
+            </g>
+            <g id="Layer_4">
+              <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
+              296.7,128 380.7,184.3 436.7,125 	"/>
+            </g>
+          </g>
+        </defs>
+      </svg>
+    <script src="lib/material.min.js"></script>
+  </body>
+    </div>
+</html>
