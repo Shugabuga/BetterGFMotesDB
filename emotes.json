@@ -1,4 +1,1002 @@
-{"emotes":[
-    {"emoteName":"heraim", "emoteTags":"joaje grunkle stanley pines", "emoteURL":"https://j-co.ga/BetterGFMotesDB/heraim.png"},
-    {"emoteName":"dippyfresh", "emoteTags":"dippy fresh", "emoteURL":"https://j-co.ga/BetterGFMotesDB/dippyfresh.png"}
-]}
+[
+  {
+    "Name":"[](#star)",
+    "Tags":"star vs the forces of evil"
+  },
+  {
+    "Name":"[](#wirt)",
+    "Tags":"over the garden wall"
+  },
+  {
+    "Name":"[](#wander)",
+    "Tags":"wander over yonder"
+  },
+  {
+    "Name":"[](#steven)",
+    "Tags":"steven universe"
+  },
+  {
+    "Name":"[](#su-dippyfresh)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#su-princess)",
+    "Tags":"Stanford Pines"
+  },
+  {
+    "Name":"[](#su-joaje)",
+    "Tags":"heraim Grunkle Stanley Pines joaje"
+  },
+  {
+    "Name":"[](#heyyoutbgf)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#redditsilver)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#grunkle)",
+    "Tags":"Stanley Pines"
+  },
+  {
+    "Name":"[](#stanwow)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#grunklemad)",
+    "Tags":"Stanley Pines"
+  },
+  {
+    "Name":"[](#heraim)",
+    "Tags":"Grunkle Stanley Pines joaje"
+  },
+  {
+    "Name":"[](#onedoesnot)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#eyebrowstan)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#icansellthis)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#trytosmile)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#burnit)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#soos)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#toomuch)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#soosheart)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#holysoos)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#wendy)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#wendyread)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#wearewomen)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#eyeroll)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#yesido)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#mybrother)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#lookonhisface)",
+    "Tags":"Stanford Pines"
+  },
+  {
+    "Name":"[](#fordmad)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#eesh)",
+    "Tags":"Stanford Pines"
+  },
+  {
+    "Name":"[](#fordscream)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#candy)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#grenda)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#mcg)",
+    "Tags":"McGucket"
+  },
+  {
+    "Name":"[](#mcevil)",
+    "Tags":"McGucket"
+  },
+  {
+    "Name":"[](#waddles)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#waddleswag)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#noooo)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#gideon)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#gideonplan)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#usethem)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#budeon)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#budangry)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#trigger)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#prettyface)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#matchmade)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#scarytree)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#sadt)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#robbie)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#robbiesoso)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bighenry)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#gnome)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#tad)",
+    "Tags":"Tad BREAD Strange"
+  },
+  {
+    "Name":"[](#muted)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#pacifwhat)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#pacifisad)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#pazmad)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#puppetmabel)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#puppetdipper)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#puppetstan)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#bwaaa)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#kermit)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#notimpressed)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#impressed)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#stanthink)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#ducktective)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bill)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#billexpression)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#angrybill)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#lotsofthings)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#didyamissme)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#billdeal)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#billohmy)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#blackbill)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#billlaugh)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#frenchbills)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#dippyfresh)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bipper)",
+    "Tags":"Dipper Pines Bill"
+  },
+  {
+    "Name":"[](#bippermad)",
+    "Tags":"Dipper Pines Bill"
+  },
+  {
+    "Name":"[](#blindeyeguy)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#getem)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#oooh)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#meowmeow)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#usausa)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#blendin)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#mabel)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelwat)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelgoof)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelevil)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#grumpymabel)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#partygurl)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#thumbdown)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#pout)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#happymabel)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#distressmabel)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelgum)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelidk)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#cryofjoy)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabegross)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelsquee)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#disapproval)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#death)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#excited)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mabelcry)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#cutemabel)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#dipmad)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#paperjam)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipponder)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipcheer)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#indianadipper)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dippergross)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipsad)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#airquote)",
+    "Tags":"Dipper Pinesdipper"
+  },
+  {
+    "Name":"[](#dipawe)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipcry)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipslap)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#pinescream)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#throwup)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#manlydip)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipexcite)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipthink)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#nope)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bodyisready)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#pixelaugh)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#dipper)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#dipdoh)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#mabeltbgf)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#mayhog)",
+    "Tags":"Waddles Mabel Pines"
+  },
+  {
+    "Name":"[](#stan)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#ford)",
+    "Tags":"Stanford Pines"
+  },
+  {
+    "Name":"[](#wendyup)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#wendyreal)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#wendylight)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#udabest)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#billtbgf)",
+    "Tags":"Bill Cipher"
+  },
+  {
+    "Name":"[](#blindeye)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#stanbucks)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#extroar)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#evilfresh)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#heyyou)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#bippyfresh)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#abandonthread)",
+    "Tags":"Star vs the forces of evil"
+  },
+  {
+    "Name":"[](#abandonthread2)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#dipcrazy)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#fordeatskids)",
+    "Tags":"Stanford Pines"
+  },
+  {
+    "Name":"[](#hoh)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#nevermindallthat)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#nocomment)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#ohsnap)",
+    "Tags":"Tad BREAD Strange"
+  },
+  {
+    "Name":"[](#permascarred)",
+    "Tags":"Tad BREAD Strange"
+  },
+  {
+    "Name":"[](#siblinghug)",
+    "Tags":"mabel dipper pines"
+  },
+  {
+    "Name":"[](#soosgasp)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#wendisappoint)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#dipsass)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#haigb)",
+    "Tags":"grunkle stanley joaje Pines"
+  },
+  {
+    "Name":"[](#hehe)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#herewego)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#jammyfresh)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#noo)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#pixelsass)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#problemsolved)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#scream)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#snoo-dipper)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#snoo-mabel)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#snoo-questiony)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#sooweird)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#snoos)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#woo)",
+    "Tags":"Mabel Pines"
+  },
+  {
+    "Name":"[](#chillpill)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#gideonbot)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#88freshes)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#dippymad)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#duckface)",
+    "Tags":"grunkle stanley Pines"
+  },
+  {
+    "Name":"[](#friskyfresh)",
+    "Tags":"Dippy Fresh frisk undertale"
+  },
+  {
+    "Name":"[](#mabelcute)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#powerofmabel)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#rippyfresh)",
+    "Tags":"Dippy Fresh"
+  },
+  {
+    "Name":"[](#theend)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#unseenjoaje)",
+    "Tags":"heraim haigb joaje grunkle stanley Pines"
+  },
+  {
+    "Name":"[](#flipadip)",
+    "Tags":"dippy fresh"
+  },
+  {
+    "Name":"[](#stantounge)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#billdin)",
+    "Tags":"Bill cipher blendin"
+  },
+  {
+    "Name":"[](#summerween)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#handwitch)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#stangrin)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#umm)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#stansquint)",
+    "Tags":"Grunkle Stanley Pines"
+  },
+  {
+    "Name":"[](#wink)",
+    "Tags":"Lil Gideon"
+  },
+  {
+    "Name":"[](#fordshades)",
+    "Tags":"stanford Pines"
+  },
+  {
+    "Name":"[](#soostounge)",
+    "Tags":"Soos"
+  },
+  {
+    "Name":"[](#alex)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#woodip)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#alex2)",
+    "Tags":"cipher"
+  },
+  {
+    "Name":"[](#alexbill)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#ieatkids)",
+    "Tags":"Grunkle Stanley Pines i heart kids"
+  },
+  {
+    "Name":"[](#soosamaze)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#cblater)",
+    "Tags":"Wendy"
+  },
+  {
+    "Name":"[](#bippersmile)",
+    "Tags":"Dipper Bill"
+  },
+  {
+    "Name":"[](#blindivan)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bord)",
+    "Tags":"Bill cipher stanford Pines"
+  },
+  {
+    "Name":"[](#butter)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#buttivan)",
+    "Tags":"blind ivan"
+  },
+  {
+    "Name":"[](#candle)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#creepygideon)",
+    "Tags":"Lil gideon"
+  },
+  {
+    "Name":"[](#dipper2)",
+    "Tags":"Dipper Pines"
+  },
+  {
+    "Name":"[](#ducktwin)",
+    "Tags":"ducktective"
+  },
+  {
+    "Name":"[](#gideongrin)",
+    "Tags":"lil gideon"
+  },
+  {
+    "Name":"[](#gorney)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#journal1)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#journal2)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#journal3)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#mabelopen)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#manataur)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#mermando)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#mabelsweater)",
+    "Tags":"Pines"
+  },
+  {
+    "Name":"[](#shapeshifter)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#smiledip)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#stanrun)",
+    "Tags":"grunkle stanley Pines"
+  },
+  {
+    "Name":"[](#trickster)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#sweatertown)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#tyrone)",
+    "Tags":"clone 2 two"
+  },
+  {
+    "Name":"[](#dipperpony)",
+    "Tags":"Dipper Pines my little pony brony"
+  },
+  {
+    "Name":"[](#mabelpony)",
+    "Tags":"my little pony brony mabel Pines"
+  },
+  {
+    "Name":"[](#mabelhallucination)",
+    "Tags":"mabel Pines"
+  },
+  {
+    "Name":"[](#pacifisad2)",
+    "Tags":"Pacifica Northwest"
+  },
+  {
+    "Name":"[](#pacifimom)",
+    "Tags":"Pacifica Northwest"
+  },
+  {
+    "Name":"[](#mayor)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#danconfused)",
+    "Tags":"manly dan"
+  },
+  {
+    "Name":"[](#lovegod)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#screamhead)",
+    "Tags":"head that screams for all of eternity"
+  },
+  {
+    "Name":"[](#adorablles)",
+    "Tags":"waddles"
+  },
+  {
+    "Name":"[](#soosfaint)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#somethingbig)",
+    "Tags":"Old man McGucket"
+  },
+  {
+    "Name":"[](#ladysoosan)",
+    "Tags":"Susan Soos"
+  },
+  {
+    "Name":"[](#beastoneeye)",
+    "Tags":"old man McGucket"
+  },
+  {
+    "Name":"[](#eatable)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#crystable)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#government)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#youngblubs)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#puppetsoos)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#puppetwendy)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#bipperpretty)",
+    "Tags":"Bill Dipper Pines"
+  },
+  {
+    "Name":"[](#alexclown)",
+    "Tags":""
+  },
+  {
+    "Name":"[](#gamegirl)",
+    "Tags":"giffany"
+  },
+  {
+    "Name":"[](#heygurl)",
+    "Tags":"several times"
+  },
+  {
+    "Name":"[](#timebaby)",
+    "Tags":"future"
+  },
+  {
+    "Name":"[](#franz)",
+    "Tags":"golf Lilliputtians dutch ball"
+  },
+  {
+    "Name":"[](#franzidea)",
+    "Tags":"golf Lilliputtians dutch ball"
+  },
+  {
+    "Name":"[](#franzmad)",
+    "Tags":"golf Lilliputtians dutch ball"
+  }
+]
