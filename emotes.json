@@ -1,5 +1,6 @@
-{"Emotes":
-[
+{
+
+  "Emotes": [
   {
     "Width": 70,
     "Height": 70,
@@ -1500,4 +1501,5 @@
     "Name":"franzmad",
     "Tags":"golf Lilliputtians dutch ball"
   }
-]}
+]
+}
