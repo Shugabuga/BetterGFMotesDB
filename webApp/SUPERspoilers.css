@@ -1,0 +1,251 @@
+/* BetterGFMote's Site-wide spoiler system! Does not work with subreddits using the NSFW tag for spoilers (yet!)
+
+For this to work on your subreddit, you can either use the spoiler code from /r/spoilercsstesting or have a spoiler flair with a CSS class of "spoiler" or "spoilers" (that's all lowercase)
+*/
+
+.linkflair-spoiler a.title:before {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    content: "Spoiler: ";
+}
+
+.linkflair-spoiler a.title {
+   color: transparent!important;
+   text-shadow: 0 0 7px teal!important;
+}
+.linkflair-spoiler a.title:visited {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+.linkflair-spoiler a.title:hover {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+
+.linkflair-spoiler:hover {
+    -webkit-filter: blur(0px)!important;
+    filter: blur(0px)!important;
+    text-shadow: 0 0 0px teal;
+    visibility: visible!important;
+}
+
+.linkflair-spoiler .thumbnail img { display: none }
+
+.linkflair-spoiler .linkflairlabel {
+    background: transparent;
+    border-color: teal;
+    color: teal;
+    text-transform: uppercase;
+}
+
+.linkflair-spoiler .thumbnail {
+    background-image: url(https://j-co.ga/spoiler.png)!important;
+    background-position: 0px 0px!important;
+    width: 70px!important;
+    height: 70px!important;
+}
+
+/*s*/
+
+.linkflair-spoilers a.title:before {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    content: "Spoiler: ";
+}
+
+.linkflair-spoilers a.title {
+   color: transparent!important;
+   text-shadow: 0 0 7px teal!important;
+}
+.linkflair-spoilers a.title:visited {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+.linkflair-spoilers a.title:hover {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+
+.linkflair-spoilers:hover {
+    -webkit-filter: blur(0px)!important;
+    filter: blur(0px)!important;
+    text-shadow: 0 0 0px teal;
+    visibility: visible!important;
+}
+
+.linkflair-spoilers .thumbnail img { display: none }
+
+.linkflair-spoilers .linkflairlabel {
+    background: transparent;
+    border-color: teal;
+    color: teal;
+    text-transform: uppercase;
+}
+
+.linkflair-spoilers .thumbnail {
+    background-image: url(https://j-co.ga/spoiler.png)!important;
+    background-position: 0px 0px!important;
+    width: 70px!important;
+    height: 70px!important;
+}
+
+/*CAPS*/
+.linkflair-Spoiler a.title:before {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    content: "Spoiler: ";
+}
+
+.linkflair-Spoiler a.title {
+   color: transparent!important;
+   text-shadow: 0 0 7px teal!important;
+}
+.linkflair-Spoiler a.title:visited {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+.linkflair-Spoiler a.title:hover {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+
+.linkflair-Spoiler:hover {
+    -webkit-filter: blur(0px)!important;
+    filter: blur(0px)!important;
+    text-shadow: 0 0 0px teal;
+    visibility: visible!important;
+}
+
+.linkflair-Spoiler .thumbnail img { display: none }
+
+.linkflair-Spoiler .linkflairlabel {
+    background: transparent;
+    border-color: teal;
+    color: teal;
+    text-transform: uppercase;
+}
+
+.linkflair-Spoiler .thumbnail {
+    background-image: url(https://j-co.ga/spoiler.png)!important;
+    background-position: 0px 0px!important;
+    width: 70px!important;
+    height: 70px!important;
+}
+
+/*S*/
+
+.linkflair-Spoilers a.title:before {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    content: "Spoiler: ";
+}
+
+.linkflair-Spoilers a.title {
+   color: transparent!important;
+   text-shadow: 0 0 7px teal!important;
+}
+.linkflair-Spoilers a.title:visited {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+.linkflair-Spoilers a.title:hover {
+    color: teal!important;
+    text-shadow: 0 0 0px teal!important;
+    visibility: visible!important;
+}
+
+.linkflair-Spoilers:hover {
+    -webkit-filter: blur(0px)!important;
+    filter: blur(0px)!important;
+    text-shadow: 0 0 0px teal;
+    visibility: visible!important;
+}
+
+.linkflair-Spoilers .thumbnail img { display: none }
+
+.linkflair-Spoilers .linkflairlabel {
+    background: transparent;
+    border-color: teal;
+    color: teal;
+    text-transform: uppercase;
+}
+
+.linkflair-Spoiler .thumbnail {
+    background-image: url(https://j-co.ga/spoiler.png)!important;
+    background-position: 0px 0px!important;
+    width: 70px!important;
+    height: 70px!important;
+}
+
+/* Begin text spoiler tags! */
+
+a[href|="#spoiler"],a[href|="#spoiler"],body:lang(bc) a[href|="#spoiler"],body:lang(bc) a[href|="#spoiler"] {
+    text-shadow: 0 0 7px teal;
+    color: transparent!important;
+    cursor: text;
+}
+
+a[href|="#spoiler"]:before,a[href|="#spoiler"]:before,body:lang(bc) a[href|="#spoiler"]:before,body:lang(bc) a[href|="#spoiler"]:before {
+    text-shadow: 0 0 0px teal;
+    color: teal;
+    content: "Spoiler: ";
+    cursor: text;
+}
+
+a:hover[href|="#spoiler"],a:hover[href|="#spoiler"],body:lang(bc) a:hover[href|="#spoiler"],body:lang(bc) a:hover[href|="#spoiler"] {
+    text-shadow: 0 0 0px teal;
+    color: teal;
+    cursor: text;
+}
+
+a[href|="/spoiler"],a[href|="/spoiler"],body:lang(bc) a[href|="/spoiler"],body:lang(bc) a[href|="/spoiler"] {
+    text-shadow: 0 0 7px teal;
+    color: transparent!important;
+    cursor: text;
+}
+
+a[href|="/spoiler"]:before,a[href|="/spoiler"]:before,body:lang(bc) a[href|="/spoiler"]:before,body:lang(bc) a[href|="/spoiler"]:before {
+    text-shadow: 0 0 0px teal;
+    color: teal;
+    content: "Spoiler: ";
+    cursor: text;
+}
+
+a:hover[href|="/spoiler"],a:hover[href|="/spoiler"],body:lang(bc) a:hover[href|="/spoiler"],body:lang(bc) a:hover[href|="/spoiler"] {
+    text-shadow: 0 0 0px teal;
+    color: teal;
+    cursor: text;
+}
+
+
+/* Custom expando-buttons for Spoilers. This kinda failed.
+
+expando-button.video.collapsed,
+.expando-button.image.collapsed,
+.expando-button.selftext.collapsed,
+.res-nightmode .expando-button.video.collapsed:hover,
+.res-nightmode .expando-button.image.collapsed:hover,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+.res-nightmode .expando-button.video.expanded,
+.res-nightmode .expando-button.image.expanded,
+.res-nightmode .expando-button.selftext.expanded,
+.res-nightmode .expando-button.video.expanded:hover,
+.res-nightmode .expando-button.image.expanded:hover,
+.res-nightmode .expando-button.selftext.expanded:hover {
+  background: repeating-linear-gradient(
+    45deg,
+    teal,
+    teal 8px,
+    transparent 8px,
+    transparent 16px
+  )!important;
+}
+
+*/

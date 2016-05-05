@@ -1,0 +1,46 @@
+/* BetterGFMote's basic spoiler system.
+
+For enhanced spoilers, replace this file with SUPERspoilers.css
+*/
+
+a[href|="#spoiler"],a[href|="#spoiler"],body:lang(bc) a[href|="#spoiler"],body:lang(bc) a[href|="#spoiler"] {
+    color: transparent!important;
+    cursor: text;
+}
+a:hover[href|="#spoiler"],a:hover[href|="#spoiler"],body:lang(bc) a:hover[href|="#spoiler"],body:lang(bc) a:hover[href|="#spoiler"] {
+    color: white;
+    cursor: text;
+}
+
+/**/
+
+a[href|="/spoiler"],a[href|="/spoiler"],body:lang(bc) a[href|="/spoiler"],body:lang(bc) a[href|="/spoiler"] {
+    color: transparent!important;
+    cursor: text;
+}
+a:hover[href|="/spoiler"],a:hover[href|="/spoiler"],body:lang(bc) a:hover[href|="/spoiler"],body:lang(bc) a:hover[href|="/spoiler"] {
+    color: white;
+    cursor: text;
+}
+
+/**/
+
+a[href|="/s"],a[href|="/s"],body:lang(bc) a[href|="/s"],body:lang(bc) a[href|="/s"] {
+    color: transparent!important;
+    cursor: text;
+}
+a:hover[href|="/s"],a:hover[href|="/s"],body:lang(bc) a:hover[href|="/s"],body:lang(bc) a:hover[href|="/s"] {
+    color: white;
+    cursor: text;
+}
+
+/**/
+
+a[href|="#s"],a[href|="#s"],body:lang(bc) a[href|="#s"],body:lang(bc) a[href|="#s"] {
+    color: transparent!important;
+    cursor: text;
+}
+a:hover[href|="#s"],a:hover[href|="#s"],body:lang(bc) a:hover[href|="#s"],body:lang(bc) a:hover[href|="#s"] {
+    color: white;
+    cursor: text;
+}

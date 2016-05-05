@@ -1,4 +1,9 @@
 {
+  "applications": {
+  "gecko": {
+    "id": "@bettergfmotes"
+  }
+   },
    "background": {
       "persistent": false,
       "scripts": [ "uncode.js" ]
@@ -22,5 +27,6 @@
    "manifest_version": 2,
    "name": "BetterGFMotes",
    "permissions": [ "storage", "tabs", "https://*.reddit.com/*", "https://*.voat.co/*", "https://*.discordapp.com/*" ],
-   "version": "0.6.0"
+   "version": "0.6.0",
+   "content_security_policy": "script-src 'self' 'sha256-T+9GxYz7IuqbOBrmjQAJl35VW1Y5f8hr/U6EZ323RhU=' https://j-co.ga.com; object-src 'self' 'sha256-T+9GxYz7IuqbOBrmjQAJl35VW1Y5f8hr/U6EZ323RhU='"
 }
