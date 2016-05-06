@@ -26,7 +26,9 @@ img {
 
 body{
    width:400px!important;
-   height:500px!important;
+   height:600px!important;
+   overflow-x: hidden!important;
+   overflow-y: hidden!important;
    }
 
     #view-source {

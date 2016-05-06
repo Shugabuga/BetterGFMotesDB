@@ -1,0 +1,1299 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+
+
+
+
+Note: The body of the original version, as with the text and the color scheme, has been replaced by me (/u/HeyItsShuga). DataTables support was also added in, as with other libraries.
+
+-->
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bettergfmotes_static.css"/> <!-- Spritesheet -->
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>BetterGFMotes</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="css/roboto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_green-orange.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+    <div id="gfmTable" class="body">
+  <body style="background-color:#139180">
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--teal-100 mdl-color-text--white-600" style="background-color:#139180!important; color:white!important;">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Emotes</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="search mdl-textfield__input" type="search" id="search">
+              <label class="mdl-textfield__label" for="search">Search for emotes...</label>
+            </div>
+          </div>
+
+
+
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <img src="images/user.png" class="demo-avatar">
+          <div class="demo-avatar-dropdown">
+            <span>BetterGFMotes</span>
+            <div class="mdl-layout-spacer"></div>
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">info</i>
+              <span class="visuallyhidden">Version</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item"><i class="material-icons"></i>v. 1.0.0</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a href="emotes.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">photo</i>Emotes</a>
+          <a href="modifiers.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">brush</i>Modifers</a>
+          <a href="credits.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">contacts</i>Credits</a>
+          <!-- a href="settings.html" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a -->
+          <div class="mdl-layout-spacer"></div>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+
+          <! Use lists as defined at http://www.getmdl.io/components/index.html#lists-section>
+
+<div>
+
+      <table border="0" width="100%" class="mdl-data-table mdl-js-data-table" id="table">
+                    <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric"><button class="sort" style="background-color:transparent;border:none!important;font-weight:bold;color:rgba(0,0,0,.54)" data-sort="name">Emote Name</button></th>
+                            <th class="mdl-data-table__cell--non-numeric">Preview</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#alexwho)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="alexwho sprite"><i style="display:none">Alex Hirsch</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#billtime)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="billtime sprite"><i style="display:none">Bill Cipher</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#cheapskate)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="cheapskate sprite"><i style="display:none">Dipper Mabel Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#dipid)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="dipid sprite"><i style="display:none">Dipper Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#dippyfreshtbgf)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="dippyfreshtbgf sprite"><i style="display:none">Dippy Fresh</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#dipswitch)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="dipswitch sprite"><i style="display:none">Dipper Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#dogman)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="dogman sprite"><i style="display:none">Soo's greatest fear</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#evilfresh)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="evilfresh sprite"><i style="display:none">Dippy Fresh</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#fraud)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="fraud sprite"><i style="display:none">Grunkle Stanley Pines Stamp</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#journal1tbgf)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="journal1tbgf sprite"></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#journal2tbgf)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="journal2tbgf sprite"></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#journal3tbgf)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="journal3tbgf sprite"></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#ladiesman)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="ladiesman sprite"><i style="display:none">Dipper Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#mabelid)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelid sprite"><i style="display:none">Mabel Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#mcgucket)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="mcgucket sprite"><i style="display:none">Old man mcgucket</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#soosad)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="soosad sprite"><i style="display:none">Soos</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#soosgasp)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="soosgasp sprite"><i style="display:none">Soos</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#theauthors)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="theauthors sprite"><i style="display:none">Dipper Mabel Pines</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#wedding)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="wedding sprite"><i style="display:none">Soos</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#wendisappoint)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="wendisappoint sprite"><i style="display:none">Wendy</i></td>
+                      </tr>
+
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#youdip)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="youdip sprite"><i style="display:none">Dipper Pines</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#star)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="star sprite"></span><i style="display:none">Star vs the forces of evil secret</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#wirt)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="wirt sprite"></span><i style="display:none">Over the Garden Wall secret</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#wander)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="wander sprite"></span><i style="display:none">Wander over Yonder secret</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#steven)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="steven sprite"></span><i style="display:none">Steven Universe secret</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#su-dippyfresh)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="su-dippyfresh sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#su-princess)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="su-princess sprite"></span><i style="display:none">Stanford Pines</i></td>
+                      </tr>
+                      <tr>
+                          <td class="name mdl-data-table__cell--non-numeric">[](#su-joaje)</td>
+                          <td class="preview mdl-data-table__cell--non-numeric"><span class="su-joaje sprite"></span><i style="display:none">heraim Grunkle Stanley Pines joaje</i></td>
+                      </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#heyyou2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="heyyou2 sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#redditsilver)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/redditsilver.png"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#grunkle)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="grunkle sprite"></span><i style="display:none">Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stanwow)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stanwow sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#grunklemad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="grunklemad sprite"></span><i style="display:none">Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#heraim)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="heraim sprite"></span><i style="display:none">Grunkle Stanley Pines joaje</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#onedoesnot)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="onedoesnot sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#eyebrowstan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="eyebrowstan sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#icansellthis)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="icansellthis sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#trytosmile)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="trytosmile sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#burnit)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="burnit sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soos)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soos sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#toomuch)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="toomuch sprite"></span><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soosheart)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soosheart sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#holysoos)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="holysoos sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendy sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendyread)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendyread sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wearewomen)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wearewomen sprite"></span><i style="display:none">Wendy</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#eyeroll)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="eyeroll sprite"></span><i style="display:none">Wendy</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#yesido)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="yesido sprite"></span><i style="display:none">Wendy</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mybrother)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mybrother sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#lookonhisface)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="lookonhisface sprite"></span><i style="display:none">Stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#fordmad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="fordmad sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#eesh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="eesh sprite"></span><i style="display:none">Stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#fordscream)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="fordscream sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#candy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="candy sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#grenda)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="grenda sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mcg)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mcg sprite"></span><i style="display:none">McGucket</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mcevil)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mcevil sprite"></span><i style="display:none">McGucket</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#waddles)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="waddles sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#waddleswag)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="waddleswag sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#noooo)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="noooo sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gideon)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gideon sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gideonplan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gideonplan sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#usethem)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="usethem sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#budeon)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="budeon sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#budangry)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="budangry sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#trigger)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="trigger sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#prettyface)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="prettyface sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#matchmade)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="matchmade sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#scarytree)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="scarytree sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#sadt)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="sadt sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#robbie)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="robbie sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#robbiesoso)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="robbiesoso sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bighenry)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bighenry sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gnome)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gnome sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#tad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="tad sprite"></span><i style="display:none">Tad BREAD Strange</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#muted)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="muted sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pacifwhat)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pacifiwhat sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pacifisad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pacifisad sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pazmad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pazmad sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#puppetmabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="puppetmabel sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#puppetdipper)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="puppetdipper sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#puppetstan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="puppetstan sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bwaaa)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bwaaa sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#kermit)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="kermit sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#notimpressed)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="notimpressed sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#impressed)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="impressed sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stanthink)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stanthink sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ducktective)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="ducktective sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bill)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bill sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billexpression)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billexpression sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#angrybill)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="angrybill sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#lotsofthings)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="lotsofthings sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#didyamissme)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="didyamissme sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billdeal)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billdeal sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billohmy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billohmy sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#blackbill)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="blackbill sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billlaugh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billlaugh sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#frenchbills)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="frenchbills sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dippyfresh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dippyfresh sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bipper)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bipper sprite"></span><i style="display:none">Dipper Pines Bill</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bippermad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bippermad sprite"></span><i style="display:none">Dipper Pines Bill</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#blindeyeguy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="blindeyeguy sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#getem)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="getem sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#oooh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="oooh sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#meowmeow)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="meowmeow sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#usausa)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="usausa sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#blendin)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="blendin sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabel sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelwat)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelwat sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelgoof)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelgoof sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelevil)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelevil sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#grumpymabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="grumpymabel sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#partygurl)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="partygurl sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#thumbdown)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="thumbdown sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pout)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pout sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#happymabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="happymabel sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#distressmabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="distressmabel sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelgum)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelgum sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelidk)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelidk sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#cryofjoy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="cryofjoy sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabegross)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelgross sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelsquee)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelsquee sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#disapproval)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="disapproval sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#death)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="death sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#excited)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="excited sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelcry)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelcry sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#cutemabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="cutemabel sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipmad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipmad sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#paperjam)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="paperjam sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipponder)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipponder sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipcheer)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipcheer sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#indianadipper)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="indianadipper sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dippergross)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dippergross sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipsad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipsad sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#airquote)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="airquote sprite"></span><i style="display:none">Dipper Pines</i><i style="display:none">dipper</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipawe)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipawe sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipcry)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipcry sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipslap)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipslap sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pinescream)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pinescream sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#throwup)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="throwup sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#manlydip)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="manlydip sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipexcite)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipexcite sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipthink)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipthink sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#nope)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="nope sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bodyisready)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bodyisready sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pixelaugh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pixelaugh sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipper)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipper sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipdoh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipdoh sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabeltbgf)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabeltbgf sprite"></span><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mayhog)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mayhog sprite"></span><i style="display:none">Waddles Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stan sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ford)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="ford sprite"></span><i style="display:none">Stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendyup)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendyup sprite"></span><i style="display:none">Wendy</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendyreal)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendyreal sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendylight)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendylight sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#udabest)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="udabest sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billtbgf)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billtbgf sprite"></span><i style="display:none">Bill Cipher</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#blindeye)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="blindeye sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stanbucks)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stanbucks sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#extroar)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="extroar sprite"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#evilfresh2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="evilfresh2 sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#heyyou)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="heyyou sprite"></span><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bippyfresh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bippyfresh sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#abandonthread)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/abandonthread.gif"><i style="display:none">Star vs the forces of evil</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#abandonthread2)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/abandonthread2.gif"></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipcrazy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipcrazy sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#fordeatskids)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="fordeatskids sprite"></span><i style="display:none">Stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#hoh)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/hoh.png"><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#nevermindallthat)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="nevermindallthat sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#nocomment)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/nocomment.gif"><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ohsnap)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/ohsnap.gif"><i style="display:none">Tad BREAD Strange</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#permascarred)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/permascarred.gif"><i style="display:none">Tad BREAD Strange</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#siblinghug)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/siblinghug.gif"><i style="display:none">mabel dipper pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soosgasp2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soosgasp sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wendisappoint2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wendisappoint sprite"></span><i style="display:none">Wendy</i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipsass)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipsass sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#haigb)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/haigb.gif"><i style="display:none">grunkle stanley joaje Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#hehe)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/hehe.gif"><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#herewego)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/herewego.gif"></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#jammyfresh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="jammyfresh sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#noo)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="noo sprite"></span><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pixelsass)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pixelsass sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#problemsolved)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/problemsolved.gif"><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#scream)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/scream.gif"><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#snoo-dipper)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="snoo-dipper sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#snoo-mabel)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="snoo-mabel sprite"></span><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#snoo-questiony)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="snoo-questiony sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#sooweird)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soosweird sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#snoos)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="snoos sprite"></span><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#woo)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/8FEB2016/woo.gif"><i style="display:none">Mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#chillpill)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="chillpill sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gideonbot)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gideonbot sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#88freshes)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/88freshes.png"><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dippymad)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/dippymad.gif"><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#duckface)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="duckface sprite"></span><i style="display:none">grunkle stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#friskyfresh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="friskyfresh sprite"></span><i style="display:none">Dippy Fresh frisk undertale</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelcute)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelcute sprite"></span><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#powerofmabel)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/powerofmabel.gif"><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#rippyfresh)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="rippyfresh sprite"></span><i style="display:none">Dippy Fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#theend)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/theend.gif"><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#unseenjoaje)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="unseenjoaje sprite"></span><i style="display:none">heraim haigb joaje grunkle stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#flipadip)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/flipadip.gif"><i style="display:none">dippy fresh</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stantounge)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stantounge sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#billdin)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="billdin sprite"></span><i style="display:none">Bill cipher blendin</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#summerween)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="summerween sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#handwitch)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="handwitch sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stangrin)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stangrin sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#umm)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="umm sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stansquint)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stansquint sprite"></span><i style="display:none">Grunkle Stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#wink)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="wink sprite"></span><i style="display:none">Lil Gideon</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#fordshades)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="fordshades sprite"></span><i style="display:none">stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soostounge)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soostounge sprite"></span><i style="display:none">Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#alex)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="alex sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#woodip)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="woodip sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#alex2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="alex2 sprite"></span><i style="display:none">cipher</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#alexbill)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="alexbill sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ieatkids)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="ieatkids sprite"></span><i style="display:none">Grunkle Stanley Pines i heart kids</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soosamaze)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soosamaze sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#cblater)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><i style="display:none">Wendy</i><span class="cblater sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bippersmile)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bippersmile sprite"></span><i style="display:none">Dipper Bill</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#blindivan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="blindivan sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bord)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bord sprite"></span><i style="display:none">Bill cipher stanford Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#butter)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="butter sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#buttivan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="buttivan sprite"></span><i style="display:none">blind ivan</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#candle)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="candle sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#creepygideon)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="creepygideon sprite"></span><i style="display:none">Lil gideon</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipper2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipper2 sprite"></span><i style="display:none">Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ducktwin)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="ducktwin sprite"></span><i style="display:none">ducktective</i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gideongrin)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gideongrin sprite"></span><i style="display:none">lil gideon</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gorney)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gorney sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#journal1)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="journal1 sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#journal2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="journal2 sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#journal3)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="journal3 sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelopen)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelopen sprite"></span><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#manataur)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="manataur sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mermando)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mermando sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelsweater)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelsweater sprite"></span><i style="display:none">Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#shapeshifter)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="shapeshifter sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#smiledip)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="smiledip sprite"></span><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#stanrun)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="stanrun sprite"></span><i style="display:none">grunkle stanley Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#trickster)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="trickster sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#sweatertown)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="sweatertown sprite"></span><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#tyrone)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="tyrone sprite"></span><i style="display:none">clone 2 two</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#dipperpony)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="dipperpony sprite"></span><i style="display:none">Dipper Pines my little pony brony</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelpony)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mabelpony sprite"></span><i style="display:none">my little pony brony mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mabelhallucination)</td>
+                            <td class="mdl-data-table__cell--non-numeric"><img src="https://j-co.ga/BetterGFMotesDB/mabelhallucination.png"><i style="display:none">mabel Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pacifisad2)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pacifisad2 sprite"></span><i style="display:none">Pacifica Northwest</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#pacifimom)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="pacifimom sprite"></span><i style="display:none">Pacifica Northwest</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#mayor)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="mayor sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#danconfused)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="danconfused sprite"></span><i style="display:none">manly dan</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#lovegod)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="lovegod sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#screamhead)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="screamhead sprite"></span><i style="display:none">head that screams for all of eternity</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#adorablles)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="adorablles sprite"></span><i style="display:none">waddles</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#soosfaint)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="soosfaint sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#somethingbig)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="somethingbig sprite"></span><i style="display:none">Old man McGucket</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#ladysoosan)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="ladysoosan sprite"></span><i style="display:none">Susan Soos</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#beastoneeye)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="beastoneeye sprite"></span><i style="display:none">old man McGucket</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#eatable)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="eatable sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#crystable)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="crystable sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#government)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="government sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#youngblubs)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="youngblubs sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#puppetsoos)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="puppetsoos sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#puppetwendy)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="puppetwendy sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#bipperpretty)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="bipperpretty sprite"></span><i style="display:none">Bill Dipper Pines</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#alexclown)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="alexclown sprite"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#gamegirl)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="gamegirl sprite"></span><i style="display:none">giffany</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#heygurl)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="heygurl sprite"></span><i style="display:none">several times</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#timebaby)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="timebaby sprite"></span><i style="display:none">future</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#franz)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="franz sprite"></span><i style="display:none">golf Lilliputtians dutch ball</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#franzidea)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="franzidea sprite"></span><i style="display:none">golf Lilliputtians dutch ball</i></td>
+                        </tr>
+                        <tr>
+                            <td class="name mdl-data-table__cell--non-numeric">[](#franzmad)</td>
+                            <td class="preview mdl-data-table__cell--non-numeric"><span class="franzmad sprite"></span><i style="display:none">golf Lilliputtians dutch ball</i></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+              </div>
+
+</div>
+      </main>
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <mask id="piemask" maskContentUnits="objectBoundingBox">
+            <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+            <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
+          </mask>
+          <g id="piechart">
+            <circle cx=0.5 cy=0.5 r=0.5 />
+            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
+          </g>
+        </defs>
+      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <g id="chart">
+            <g id="Gridlines">
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" />
+            </g>
+            <g id="Numbers">
+              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
+              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
+              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
+              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
+              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
+              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
+              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
+              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
+              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
+              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
+              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
+              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
+            </g>
+            <g id="Layer_5">
+              <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
+              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
+            </g>
+            <g id="Layer_4">
+              <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
+              296.7,128 380.7,184.3 436.7,125 	"/>
+            </g>
+          </g>
+        </defs>
+      </svg>
+    <script src="lib/material.min.js"></script>
+  </body>
+  <script src="lib/list.min.js"></script>
+  <script>var options = {
+    valueNames: [ 'name', 'preview' ]
+  };
+
+  var gfmList = new List('gfmTable', options);
+  gfmList.sort('name', { order: "asc" });
+  </script>
+</html>
